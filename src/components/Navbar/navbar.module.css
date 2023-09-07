@@ -1,0 +1,95 @@
+.container {
+  height: 55px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff6961;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.homeLink {
+  text-decoration: none;
+  color: #4d0400;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.action,
+.notifications {
+  cursor: pointer;
+}
+
+.notifications {
+  position: relative;
+}
+
+.count {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #4d0400;
+  padding: 2px 4px;
+  border-radius: 10px;
+  position: absolute;
+  top: -15%;
+  right: -10%;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.account .img {
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.account .text {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.ctaBtn {
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #4d0400;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ctaBtn:hover {
+  background-color: #4d0400;
+  color: #fff;
+}
+
+@media screen and (max-width: 780px) {
+  .action:not(:nth-child(1)),
+  .notifications {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .notifications {
+    display: none;
+  }
+}
