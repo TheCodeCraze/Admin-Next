@@ -13,24 +13,26 @@ const Sidebar = () => {
             {group.items.map((item) => {
               return item.url === "" ? (
                 <div className={styles.item} key={item.id}>
-                  <Image
-                    className={styles.img}
-                    width={20}
-                    height={20}
-                    src={item.icon}
-                    alt={item.title}
-                  />
+                  <div className={styles.imgWrapper}>
+                    <Image
+                      className={styles.img}
+                      fill
+                      src={item.icon}
+                      alt={item.title}
+                    />
+                  </div>
                   <span className={styles.title}>{item.title}</span>
                 </div>
               ) : (
                 <Link className={styles.item} key={item.id} href={item.url}>
-                  <Image
-                    className={styles.img}
-                    width={20}
-                    height={20}
-                    src={item.icon}
-                    alt={item.title}
-                  />
+                  <div className={styles.imgWrapper}>
+                    <Image
+                      className={styles.img}
+                      fill
+                      src={item.icon}
+                      alt={item.title}
+                    />
+                  </div>
                   <span className={styles.title}>{item.title}</span>
                 </Link>
               );

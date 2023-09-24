@@ -47,6 +47,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .top {
+    font-size: 1.3rem;
+  }
+
   .bottom {
     margin: 0;
   }
@@ -55,6 +59,10 @@
     padding: 0;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .text {
+    font-size: 0.95rem;
   }
 }
 

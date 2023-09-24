@@ -6,7 +6,11 @@ export const metadata = {
 };
 
 const Products = () => {
-  return <div className={styles.container}>Products</div>;
+  return (
+    <div className={styles.container}>
+      <span className={styles.text}>Products</span>
+    </div>
+  );
 };
 
 export default Products;

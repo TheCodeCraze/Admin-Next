@@ -29,6 +29,12 @@
   width: 24px;
 }
 
+.imgWrapper {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
 .img {
   object-fit: cover;
   border-radius: 50%;
@@ -58,7 +64,29 @@
 }
 
 @media screen and (max-width: 768px) {
+  .title {
+    font-size: 1.3rem;
+  }
+
   .imgContainer {
     display: block;
+    width: 30px;
+  }
+
+  .imgWrapper {
+    width: 30px;
+    height: 30px;
+  }
+
+  .user .name {
+    font-size: 0.9rem;
+  }
+
+  .user .email {
+    font-size: 0.75rem;
+  }
+
+  .amount {
+    font-size: 1rem;
   }
 }

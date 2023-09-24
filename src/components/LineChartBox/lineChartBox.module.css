@@ -46,3 +46,21 @@
 .bottom p:hover {
   text-decoration: 1.5px solid underline;
 }
+
+@media screen and (max-width: 780px) {
+  .top span {
+    font-size: 1rem;
+  }
+
+  .top p {
+    font-size: 1.1rem;
+  }
+
+  .bottom span {
+    font-size: 1.1rem;
+  }
+
+  .bottom p {
+    font-size: 1rem;
+  }
+}

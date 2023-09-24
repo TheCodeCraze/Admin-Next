@@ -1,7 +1,14 @@
 .container {
   width: 100%;
+  min-height: calc(100vh - 95px);
+  max-height: max-content;
   padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.text {
+  font-size: clamp(0.95rem, 2.5vw, 1rem);
+  color: rgb(50, 50, 50);
 }

@@ -8,16 +8,22 @@
 }
 
 .copy {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
 
-.logoContainer {
+.logo {
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
-.logoContainer span {
-  font-size: 0.8rem;
+.logoText {
+  font-size: 1rem;
   font-weight: 600;
+}
+
+@media screen and (max-width: 780px) {
+  .container {
+    border-top: 1px solid rgba(255, 105, 97, 0.25);
+  }
 }

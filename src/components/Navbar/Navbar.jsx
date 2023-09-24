@@ -17,10 +17,10 @@ const Navbar = () => {
     <nav className={styles.container}>
       <div className={styles.logoContainer}>
         <svg
-          className={styles.logo}
+          className={styles.svg}
           fill="#fff"
-          width="24px"
-          height="24px"
+          width="22px"
+          height="22px"
           viewBox="0 0 24 24"
         >
           <path
@@ -35,7 +35,7 @@ const Navbar = () => {
       <div className={styles.actions}>
         <div className={styles.action}>
           <svg
-            className={styles.search}
+            className={styles.svg}
             width="22px"
             height="22px"
             viewBox="0 0 24 24"
@@ -52,7 +52,7 @@ const Navbar = () => {
         </div>
         <div className={styles.action}>
           <svg
-            className={styles.app}
+            className={styles.svg}
             width="22px"
             height="22px"
             viewBox="0 0 32 32"
@@ -66,7 +66,7 @@ const Navbar = () => {
         </div>
         <div className={styles.action}>
           <svg
-            className={styles.expand}
+            className={styles.svg}
             fill="#fff"
             width="22px"
             height="22px"
@@ -77,7 +77,7 @@ const Navbar = () => {
         </div>
         <div className={styles.notifications}>
           <svg
-            className={styles.notification}
+            className={styles.svg}
             width="22px"
             height="22px"
             viewBox="0 0 24 24"
@@ -102,13 +102,7 @@ const Navbar = () => {
         </div>
         {user && (
           <div className={styles.account}>
-            <Image
-              width={28}
-              height={28}
-              src="/user.jpeg"
-              alt="User"
-              className={styles.img}
-            />
+            <Image className={styles.img} src="/user.jpeg" alt="User" fill />
           </div>
         )}
         <div className={styles.cta}>
@@ -124,9 +118,9 @@ const Navbar = () => {
         </div>
         <div className={styles.action}>
           <svg
-            className={styles.settings}
-            width="24px"
-            height="24px"
+            className={styles.svg}
+            width="22px"
+            height="22px"
             viewBox="0 0 24 24"
             fill="#fff"
           >

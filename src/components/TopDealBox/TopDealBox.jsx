@@ -10,15 +10,15 @@ const TopDealBox = ({ data }) => {
           return (
             <div className={styles.info} key={item.id}>
               <div className={styles.imgContainer}>
-                <Image
-                  width={24}
-                  height={24}
-                  src={item.img}
-                  alt={item.username}
-                  className={styles.img}
-                />
+                <div className={styles.imgWrapper}>
+                  <Image
+                    className={styles.img}
+                    src={item.img}
+                    alt={item.username}
+                    fill
+                  />
+                </div>
               </div>
-
               <div className={styles.user}>
                 <p className={styles.name}>{item.username}</p>
                 <p className={styles.email}>{item.email}</p>

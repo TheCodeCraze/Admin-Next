@@ -33,10 +33,6 @@
   font-size: 0.85rem;
 }
 
-.img {
-  object-fit: cover;
-}
-
 .item:hover {
   background-color: rgba(255, 105, 97, 0.75);
 }
@@ -46,17 +42,40 @@
   font-weight: 500;
 }
 
+.imgWrapper {
+  position: relative;
+  width: 22px;
+  height: 22px;
+}
+
+.img {
+  object-fit: cover;
+}
+
 @media screen and (max-width: 780px) {
   .container {
     width: max-content;
     gap: 0;
+    padding: 10px;
+    border-right: 1px solid rgba(255, 105, 97, 0.25);
   }
 
   .group > .title {
     display: none;
+    margin-bottom: 0;
+  }
+
+  .item {
+    gap: 0;
+    padding: 10px;
   }
 
   .item > .title {
     display: none;
+  }
+
+  .imgWrapper {
+    width: 26px;
+    height: 26px;
   }
 }

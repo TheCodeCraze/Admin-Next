@@ -6,7 +6,11 @@ export const metadata = {
 };
 
 const Users = () => {
-  return <div className={styles.container}>Users</div>;
+  return (
+    <div className={styles.container}>
+      <span className={styles.text}>Users</span>
+    </div>
+  );
 };
 
 export default Users;
